@@ -11,7 +11,7 @@ Node.js: Ambiente de execução.
 
 Fastify: Framework focado em baixo overhead e alta performance.
 
-TypeScript: Tipagem estática para maior segurança.
+TypeScript: Tipagem estática para maior segurança.1
 
 Boilerplate BLUE EDITION: Estrutura padronizada pelo Professor Felipe Aguiar para agilizar o desenvolvimento de APIs modernas.
 
