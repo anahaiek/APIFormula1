@@ -1,81 +1,39 @@
-<div align="center">
+# API Fórmula 1
+Este projeto é uma API REST minimalista desenvolvida para gerenciar dados sobre equipes e pilotos da Fórmula 1. O projeto foi construído utilizando o Boilerplate BLUE EDITION, seguindo os ensinamentos do Professor Felipe Aguiar durante o desafio de projeto para o Bootcamp DIO - Jornada para o Futuro.
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+## 🎬 Vídeo do funcionamento:
 
-</div>
+## 🚀 Sobre o Desafio
+O objetivo deste desafio foi colocar em prática o desenvolvimento de um backend performático utilizando Fastify e TypeScript, explorando rotas dinâmicas, tratamento de parâmetros e respostas em formato JSON.
 
-<br />
+## 🛠️ Tecnologias e Padrões
+Node.js: Ambiente de execução.
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+Fastify: Framework focado em baixo overhead e alta performance.
 
-</div>
+TypeScript: Tipagem estática para maior segurança.
 
-# 🚀 Technologies
+Boilerplate BLUE EDITION: Estrutura padronizada pelo Professor Felipe Aguiar para agilizar o desenvolvimento de APIs modernas.
 
-This code source was developed with the following items:
+Thunder Client: Testes de rotas integrados ao VS Code.
 
-### 📦 Dependencies
+## 🏁 Funcionalidades (Endpoints)
+GET /teams: Lista todas as 10 equipes da F1 (2026).
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+GET /teams/:id: Detalhes de uma equipe específica (ex: Ferrari, McLaren).
 
-### 📄 Files
+GET /drivers: Grid completo com os 22 pilotos da temporada.
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+GET /drivers/:id: Detalhes de um piloto específico (ex: Lewis Hamilton na Ferrari).
 
-### ⚡ Scripts
+## 💻 Como Executar
+Clone o repositório.
 
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
+No terminal, use npm install para baixar as dependências.
 
-# 👨‍💻 How To Use
+Inicie o servidor com npm run dev (ou o comando de script definido no seu package.json).
 
-click in **[Use this template]** OR
+Utilize o Thunder Client no VS Code para testar as requisições em http://localhost:3333.
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
-
-# Go into the repository
-$ cd node-blue-boilerplate
-
-# Install dependencies
-$ npm install
-```
-
-## Author
-
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
-
-# Credits
-
-icons by [Pino Lamanna][dribble-icon]
-
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+📝 Créditos e Agradecimentos
+Projeto desenvolvido por Ana Haiek sob orientação de Felipe Aguiar na plataforma DIO (Digital Innovation One).
